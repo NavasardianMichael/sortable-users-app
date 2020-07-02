@@ -7,6 +7,7 @@ function Form() {
   const [ currentUser, setCurrentUser ] = useState({
     firstName: '',
     lastName: '',
+    fullName: '',
     email: '',
     birthDate: '',
     phoneNumber: '374',
@@ -48,11 +49,13 @@ function Form() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    currentUser.fullName = `${currentUser.firstName} ${currentUser.lastName}`;
     if(!Object.values(currentUser).includes('')) {
       dispatch(addNewUserAndSort(currentUser));
       setCurrentUser({
         firstName: '',
         lastName: '',
+        fullName: '',
         email: '',
         birthDate: '',
         phoneNumber: '374',

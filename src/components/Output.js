@@ -21,7 +21,7 @@ function Output(props) {
           <tr className="bg-light">
             <th scope="col">#</th>
             <th scope="col">
-              <SortButton filterNameAsText="First Name" filterName="firstName" currentFilter={props.currentFilter} reversedSort={props.reversedSort} />
+              <SortButton filterNameAsText="First Name" filterName="fullName" currentFilter={props.currentFilter} reversedSort={props.reversedSort} />
             </th>
             <th scope="col">
               <SortButton filterNameAsText="Email" filterName="email" currentFilter={props.currentFilter} reversedSort={props.reversedSort} />
