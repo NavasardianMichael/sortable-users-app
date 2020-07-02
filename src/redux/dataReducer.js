@@ -1,28 +1,7 @@
 import { ADD_NEW_USER, SET_FILTER, SORT_USERS, REMOVE_USER } from './types';
 
 const initialState = {
-	usersToShow: [
-		{
-			id: 6849849,
-			firstName: 'michael',
-			lastName: 'navasardian',
-			email: 'avasardianmichael@gmail.com',
-			birthDate: '96684',
-			age: 22,
-			phoneNumber: '954684',
-			gender: 'male'
-		},
-		{
-			id: 2989847,
-			firstName: 'ars',
-			lastName: 'begl',
-			email: 'nardianmichael@gmail.com',
-			birthDate: '16684',
-			age: 16,
-			phoneNumber: '54684',
-			gender: 'female'
-		}		
-	],
+	usersToShow: [],
 	currentFilter: '',
 	reversedSort: false
 }

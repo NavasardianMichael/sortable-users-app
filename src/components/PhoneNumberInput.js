@@ -5,12 +5,16 @@ import 'react-intl-tel-input/dist/main.css';
 function PhoneNumberInput(props) {
   
 	function intTelChangeHandler(isValid, phone, country) {
-	    props.setCurrentUser(prev => {
-	      return {
-	        ...prev,
-	        phoneNumber: phone
-	      }
-	    })
+		if(/[\D+]/.test(phone)) {
+			return false
+		} else {
+		    props.setCurrentUser(prev => {
+		      return {
+		        ...prev,
+		        phoneNumber: phone
+		      }
+		    })
+		}
 	};
 
 	function intCountryChangeHandler(input, countryInfo) {

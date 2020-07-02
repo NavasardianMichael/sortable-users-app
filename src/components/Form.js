@@ -9,14 +9,15 @@ function Form() {
     lastName: '',
     email: '',
     birthDate: '',
-    phoneNumber: '+374',
+    phoneNumber: '374',
     gender: ''
   });
 
   useEffect(() => {
     setCurrentUser(state => {
       return {
-        ...state, age: calculateAge(currentUser.birthDate)
+        ...state,
+        age: calculateAge(currentUser.birthDate)
       }
     })
   },[currentUser.birthDate]);
@@ -47,15 +48,14 @@ function Form() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    if(!Object.values(currentUser).includes(''))  {
+    if(!Object.values(currentUser).includes('')) {
       dispatch(addNewUserAndSort(currentUser));
-      console.log(currentUser)
       setCurrentUser({
         firstName: '',
         lastName: '',
         email: '',
         birthDate: '',
-        phoneNumber: '+374',
+        phoneNumber: '374',
         gender: ''
       })
     };
