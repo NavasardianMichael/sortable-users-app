@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/sortable-users-app/static/css/main.3d948f0e.chunk.css",
+    "main.js": "/sortable-users-app/static/js/main.748db332.chunk.js",
+    "main.js.map": "/sortable-users-app/static/js/main.748db332.chunk.js.map",
+    "runtime-main.js": "/sortable-users-app/static/js/runtime-main.36b184b9.js",
+    "runtime-main.js.map": "/sortable-users-app/static/js/runtime-main.36b184b9.js.map",
+    "static/css/2.24b43e67.chunk.css": "/sortable-users-app/static/css/2.24b43e67.chunk.css",
+    "static/js/2.30e9a07c.chunk.js": "/sortable-users-app/static/js/2.30e9a07c.chunk.js",
+    "static/js/2.30e9a07c.chunk.js.map": "/sortable-users-app/static/js/2.30e9a07c.chunk.js.map",
+    "static/js/3.b74ec16e.chunk.js": "/sortable-users-app/static/js/3.b74ec16e.chunk.js",
+    "static/js/3.b74ec16e.chunk.js.map": "/sortable-users-app/static/js/3.b74ec16e.chunk.js.map",
+    "index.html": "/sortable-users-app/index.html",
+    "precache-manifest.1e80308432c187127ad624f3b78047e6.js": "/sortable-users-app/precache-manifest.1e80308432c187127ad624f3b78047e6.js",
+    "service-worker.js": "/sortable-users-app/service-worker.js",
+    "static/css/2.24b43e67.chunk.css.map": "/sortable-users-app/static/css/2.24b43e67.chunk.css.map",
+    "static/css/main.3d948f0e.chunk.css.map": "/sortable-users-app/static/css/main.3d948f0e.chunk.css.map",
+    "static/js/2.30e9a07c.chunk.js.LICENSE.txt": "/sortable-users-app/static/js/2.30e9a07c.chunk.js.LICENSE.txt",
+    "static/media/main.css": "/sortable-users-app/static/media/flags@2x.27670c53.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.36b184b9.js",
+    "static/css/2.24b43e67.chunk.css",
+    "static/js/2.30e9a07c.chunk.js",
+    "static/css/main.3d948f0e.chunk.css",
+    "static/js/main.748db332.chunk.js"
+  ]
+}
