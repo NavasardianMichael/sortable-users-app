@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e9947f148ae3fafac7d9550ea76a393",
+    "revision": "130ca966fa6a615a72f1b2557e1ba036",
     "url": "/sortable-users-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sortable-users-app/static/css/2.24b43e67.chunk.css"
   },
   {
-    "revision": "1f64a20974a7b1e10380",
+    "revision": "ddc4a33cae9d37e93524",
     "url": "/sortable-users-app/static/css/main.8dfcb923.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sortable-users-app/static/js/3.b74ec16e.chunk.js"
   },
   {
-    "revision": "1f64a20974a7b1e10380",
-    "url": "/sortable-users-app/static/js/main.f22654ac.chunk.js"
+    "revision": "ddc4a33cae9d37e93524",
+    "url": "/sortable-users-app/static/js/main.d29b8c80.chunk.js"
   },
   {
     "revision": "7bd9cc1ee37b5f7102fd",
