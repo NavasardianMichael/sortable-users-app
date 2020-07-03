@@ -15,13 +15,23 @@ function Form() {
   });
 
   useEffect(() => {
-    setCurrentUser(state => {
+    setCurrentUser(prev => {
       return {
-        ...state,
+        ...prev,
         age: calculateAge(currentUser.birthDate)
       }
     })
   },[currentUser.birthDate]);
+
+  useEffect(() => {
+    console.log(1)
+    setCurrentUser(prev => {
+      return {
+        ...prev,
+        fullName: `${prev.firstName} ${prev.lastName}`
+      }
+    })
+  },[currentUser.firstName, currentUser.lastName]);    
 
   function calculateAge(birthday) {
       var today = new Date();
@@ -49,7 +59,13 @@ function Form() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    currentUser.fullName = `${currentUser.firstName} ${currentUser.lastName}`;
+    setCurrentUser(prev => {
+      return {
+        ...prev,
+        fullName: `${prev.firstName} ${prev.lastName}`
+      }
+    });   
+
     if(!Object.values(currentUser).includes('')) {
       dispatch(addNewUserAndSort(currentUser));
       setCurrentUser({
