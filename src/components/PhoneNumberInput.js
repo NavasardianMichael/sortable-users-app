@@ -25,7 +25,7 @@ function PhoneNumberInput(props) {
 	      }
 	    })
 	};
-console.log('rendered')
+
 	return (
 		<IntlTelInput 
 			required 
