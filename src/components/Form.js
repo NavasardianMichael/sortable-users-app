@@ -10,7 +10,7 @@ function Form() {
     fullName: '',
     email: '',
     birthDate: '',
-    phoneNumber: '374',
+    phoneNumber: '',
     gender: ''
   });
 
@@ -58,7 +58,7 @@ function Form() {
         fullName: '',
         email: '',
         birthDate: '',
-        phoneNumber: '374',
+        phoneNumber: '',
         gender: ''
       })
     };

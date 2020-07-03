@@ -5,7 +5,7 @@ import 'react-intl-tel-input/dist/main.css';
 function PhoneNumberInput(props) {
   
 	function intTelChangeHandler(isValid, phone, country) {
-		if(/[\D+]/.test(phone)) {
+		if(/[\D]/.test(phone)) {
 			return false
 		} else {
 		    props.setCurrentUser(prev => {
@@ -21,11 +21,11 @@ function PhoneNumberInput(props) {
 	    props.setCurrentUser(prev => {
 	      return {
 	        ...prev,
-	        phoneNumber: `+${countryInfo.dialCode} `
+	        phoneNumber: countryInfo.dialCode
 	      }
 	    })
 	};
-
+console.log('rendered')
 	return (
 		<IntlTelInput 
 			required 
