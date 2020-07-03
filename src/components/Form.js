@@ -24,7 +24,6 @@ function Form() {
   },[currentUser.birthDate]);
 
   useEffect(() => {
-    console.log(1)
     setCurrentUser(prev => {
       return {
         ...prev,
