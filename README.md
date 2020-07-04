@@ -1,3 +1,5 @@
+IF YOU OPEN THIS APP THROUGH GITHUB PAGES NOT FIRST TIME, PLEASE CLEAR THE CACHE(ctrl + shift + R):
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
