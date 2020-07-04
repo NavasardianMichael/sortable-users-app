@@ -15,12 +15,12 @@ export function dataReducer(state = initialState, action) {
 			return {...state, currentFilter: action.currentFilter, reversedSort: reversedSort}
 		case SORT_USERS:
 			return {...state, usersToShow: state.usersToShow.slice().sort((a, b) => {
-				  if(typeof a[state.currentFilter] === 'string') a[state.currentFilter] = a[state.currentFilter].toLowerCase();
-				  if(typeof b[state.currentFilter] === 'string') b[state.currentFilter] = b[state.currentFilter].toLowerCase();
+				  var user_1 = typeof a[state.currentFilter] === 'string' ? a[state.currentFilter].toLowerCase() : a[state.currentFilter];
+				  var user_2 = typeof b[state.currentFilter] === 'string' ? b[state.currentFilter].toLowerCase() : b[state.currentFilter];
 				  if(state.reversedSort === false) {
-				  	return a[state.currentFilter] < b[state.currentFilter] ? -1 : b[state.currentFilter] > a[state.currentFilter] ? 1 : 0;
+				  	return user_1 < user_2 ? -1 : user_2 > user_1 ? 1 : 0;
 				  }	 else {
-				  	return a[state.currentFilter] > b[state.currentFilter] ? -1 : b[state.currentFilter] < a[state.currentFilter] ? 1 : 0;
+				  	return user_1 > user_2 ? -1 : user_2 < user_1 ? 1 : 0;
 				  }
 			})}
 		case REMOVE_USER:
